@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Actualizar el nombre y email de un usuario existente</title>
+    <title>Modificar un usuario con método PUT</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -126,7 +126,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > Actualizar el nombre y email de un usuario existente
+        > Modificar un usuario con m&eacute;todo PUT
         </span>
         </div>
         <div class="rightbg"></div>
@@ -144,7 +144,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-05-2024 07:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-05-2024 08:08</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -159,7 +159,7 @@
                                 <div>
                                     <h3 class="discreet-story-header">
                                         <i class="fa fa-2x fa-comments-o"></i>
-                                        <span class="story-header-title">Actualizar Un Usuario Con Método PUT</span>
+                                        <span class="story-header-title">Automatización De REST API - POM</span>
                                     </h3>
                                 </div>
 
@@ -173,10 +173,10 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon fa-2x' title='PENDING'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="pending-color">
-                                    Actualizar el nombre y email de un usuario existente
+                                <span class="success-color">
+                                    Modificar un usuario con m&eacute;todo PUT
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,12 +214,12 @@
                     <td colspan="5"></td>
                 </tr>
 
-                    <tr class="test-PENDING">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="0"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
@@ -233,101 +233,123 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">PENDING</span></td>
-                        <td width="100"><span class="top-level-step">0.02s</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">0.01s</span></td>
                     </tr>
-                    <tr class="test-IGNORED">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="1"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
-                                </span>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block;">
                                     <span class="top-level-step">
-                                                And un usuario con id "6919848" necesita ser actualizado
+                                                When se modifica el usuario en el endpoint "public/v2/users/" con id "6919842" con nombre "Miguel Roa" y email "Roa@gmail.com"
                                         </span>
+                                </a>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">IGNORED</span></td>
-                        <td width="100"><span class="top-level-step">0.02s</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">3.78s</span></td>
                     </tr>
-                    <tr class="test-IGNORED">
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection1" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="1-0"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                PUT https://gorest.co.in/public/v1/users/6919842
+                                        </span>
+                                <span class="evidence">
+                                        <span class="piece-of-evidence">
+                    <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-3">
+                            REST Query
+                        </button>
+                    </span>
+                    <!-- Modal -->
+                    <div class="rest-query-details">
+                        <div class="collapse multi-collapse" id="restModal-REST-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Response</h4>
+                                        <p>URL: https://gorest.co.in/public/v1/users/6919842</p>
+                                        <p>Status code: 200</p>
+                                        <p>Content Type: application/json</p>
+                                        <h4>Request Headers</h4>
+                                        <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                        <h4>Content Body</h4>
+                                        <pre>{<br>    &quot;name&quot;: &quot;Miguel Roa&quot;,<br>    &quot;email&quot;: &quot;Roa@gmail.com&quot;<br>}</pre>
+                                        <h4>Request Cookies</h4>
+                                        <pre></pre>
+                                        <h4>Response Headers</h4>
+                                        <pre>Date: Thu, 23 May 2024 13:08:18 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;862774dcb4916a3bda9b54d19b1b2817&quot;<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 89<br>x-ratelimit-reset: 1<br>x-request-id: aa2a8fd8-d910-4fa9-b8d9-e95c74503dd1<br>x-runtime: 0.116441<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=%2FMvj2WODZCATP%2FJGeLM9OLyzNLFH152jj4Pqc8OiDY6Es6DxG1XLQLloLn5QZ2pHN%2BJKyB41ip5PjxmrP9ifRCk46CWwtSdNIr6x21hCtbiSmw%2Fc09ydYLqtknC%2Fgao%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 8885461a1fae1eb9-EZE<br>Content-Encoding: gzip<br>alt-svc: h3=&quot;:443&quot;; ma=86400</pre>
+                                    <h4>Response Body</h4>
+                                        <pre>{<br>    &quot;meta&quot;: null,<br>    &quot;data&quot;: {<br>        &quot;email&quot;: &quot;Roa@gmail.com&quot;,<br>        &quot;name&quot;: &quot;Miguel Roa&quot;,<br>        &quot;id&quot;: 6919842,<br>        &quot;gender&quot;: &quot;male&quot;,<br>        &quot;status&quot;: &quot;inactive&quot;<br>    }<br>}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        </span>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0.02s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="2"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="top-level-step">
-                                                When el usuario con id "6919848" es actualizado con nombre "Rev. Kin Tandon" y correo "rev_kin_tandon@bruen.example"
+                                                Then se valida que el status code 200 y que el nombre sea "Miguel Roaa" y el email sea "Roa@gmail.com"
                                         </span>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">IGNORED</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
                         <td width="100"><span class="top-level-step">0s</span></td>
                     </tr>
-                    <tr class="test-IGNORED">
-
-                        <td width="50" class="step-icon">
-                            <a name="3"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
-                                                Then la respuesta debe tener código de estado 200 y contener el nombre actualizado "Nuevo Nombre" y correo "nuevo.email@ejemplo.com"
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="top-level-step">IGNORED</span></td>
-                        <td width="100"><span class="top-level-step">0s</span></td>
-                    </tr>
-                    <tr class="test-IGNORED">
-
-                        <td width="50" class="step-icon">
-                            <a name="4"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
-                                                And se verifica que el nombre del usuario sea "Nuevo Nombre" y el email "nuevo.email@ejemplo.com"
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="top-level-step">IGNORED</span></td>
-                        <td width="100"><span class="top-level-step">0s</span></td>
-                    </tr>
-                <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
                         <td colspan="2"></td>
-                    <td width="130"><span class="top-level-step"><em>PENDING</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.06s</em></span></td>
+                    <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>3.8s</em></span></td>
                 </tr>
 
             </table>

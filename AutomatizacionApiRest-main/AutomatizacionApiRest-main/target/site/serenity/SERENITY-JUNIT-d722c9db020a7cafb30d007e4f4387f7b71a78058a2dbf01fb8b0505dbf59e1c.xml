@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Automatización de REST API - POM" skipped="1" tests="2" time="3.9" timestamp="2024-05-23 08:08:15"><testcase name="Consultar un usuario con método GET"><skipped/></testcase><testcase name="Modificar un usuario con método PUT"/></testsuite>

@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Actualizar un usuario con método PUT","Actualizar el nombre y email de un usuario existente","FAILURE","2024-05-23T07:38:23.326-05:00[America/Bogota]","0.0","3.03"

@@ -1,10 +1,14 @@
-Feature: Actualizar un usuario con método PUT
-  Cuando el usuario con id "12345" es actualizado con nombre "Nuevo Nombre" y correo "nuevo.email@ejemplo.com"
-  Entonces la respuesta debe tener código de estado 200 y contener el nombre actualizado "Nuevo Nombre" y correo "nuevo.email@ejemplo.com"
+Feature: Automatización de REST API - POM
+  Yo como estudiante de calidad de software
+  necesito construir una petición a una API
+  para aprender a automatizar servicios
 
-  Scenario: Actualizar el nombre y email de un usuario existente
+  Scenario: Consultar un usuario con método GET
     Given se establece la base url "https://gorest.co.in/"
-    And un usuario con id "1234" necesita ser actualizado
-    When se actualiza el nombre a "Nuevo Nombre" y el email a "nuevoemail@example.com"
-    Then se valida que el status code sea 200
-    And se verifica que el nombre del usuario sea "Nuevo Nombre" y el email "nuevoemail@example.com"
+    When se consulta en el endpoint "public/v2/users/" por id "6919842"
+    Then se valida que el status code 200 y que contenga el nombre "Nuevo Nombre"
+
+  Scenario: Modificar un usuario con método PUT
+    Given se establece la base url "https://gorest.co.in/"
+    When se modifica el usuario en el endpoint "public/v2/users/" con id "6919842" con nombre "Miguel Roa" y email "Roa@gmail.com"
+    Then se valida que el status code 200 y que el nombre sea "Miguel Roaa" y el email sea "Roa@gmail.com"

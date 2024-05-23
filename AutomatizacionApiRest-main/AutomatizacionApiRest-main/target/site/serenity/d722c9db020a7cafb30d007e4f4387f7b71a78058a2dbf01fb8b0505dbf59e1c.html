@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Actualizar el nombre y email de un usuario existente</title>
+    <title>Consultar un usuario con método GET</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -126,7 +126,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > Actualizar el nombre y email de un usuario existente
+        > Consultar un usuario con m&eacute;todo GET
         </span>
         </div>
         <div class="rightbg"></div>
@@ -144,7 +144,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-05-2024 07:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-05-2024 08:08</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -159,7 +159,7 @@
                                 <div>
                                     <h3 class="discreet-story-header">
                                         <i class="fa fa-2x fa-comments-o"></i>
-                                        <span class="story-header-title">Actualizar Un Usuario Con Método PUT</span>
+                                        <span class="story-header-title">Automatización De REST API - POM</span>
                                     </h3>
                                 </div>
 
@@ -176,7 +176,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon fa-2x' title='PENDING'></i></a></span>
                             <span class="test-case-title">
                                 <span class="pending-color">
-                                    Actualizar el nombre y email de un usuario existente
+                                    Consultar un usuario con m&eacute;todo GET
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -214,12 +214,12 @@
                     <td colspan="5"></td>
                 </tr>
 
-                    <tr class="test-PENDING">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="0"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
@@ -233,30 +233,30 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">PENDING</span></td>
-                        <td width="100"><span class="top-level-step">0.02s</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">0.03s</span></td>
                     </tr>
-                    <tr class="test-IGNORED">
+                    <tr class="test-PENDING">
 
                         <td width="50" class="step-icon">
                             <a name="1"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="top-level-step">
-                                                And un usuario con id "6919848" necesita ser actualizado
+                                                When se consulta en el endpoint "public/v2/users/" por id "6919842"
                                         </span>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">IGNORED</span></td>
-                        <td width="100"><span class="top-level-step">0.02s</span></td>
+                        <td width="130"><span class="top-level-step">PENDING</span></td>
+                        <td width="100"><span class="top-level-step">0s</span></td>
                     </tr>
                     <tr class="test-IGNORED">
 
@@ -270,51 +270,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="top-level-step">
-                                                When el usuario con id "6919848" es actualizado con nombre "Rev. Kin Tandon" y correo "rev_kin_tandon@bruen.example"
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="top-level-step">IGNORED</span></td>
-                        <td width="100"><span class="top-level-step">0s</span></td>
-                    </tr>
-                    <tr class="test-IGNORED">
-
-                        <td width="50" class="step-icon">
-                            <a name="3"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
-                                                Then la respuesta debe tener código de estado 200 y contener el nombre actualizado "Nuevo Nombre" y correo "nuevo.email@ejemplo.com"
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="top-level-step">IGNORED</span></td>
-                        <td width="100"><span class="top-level-step">0s</span></td>
-                    </tr>
-                    <tr class="test-IGNORED">
-
-                        <td width="50" class="step-icon">
-                            <a name="4"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
-                                                And se verifica que el nombre del usuario sea "Nuevo Nombre" y el email "nuevo.email@ejemplo.com"
+                                                Then se valida que el status code 200 y que contenga el nombre "Nuevo Nombre"
                                         </span>
                                 <span class="evidence">
                                 </span>
@@ -327,7 +283,7 @@
                 <tr class="test-PENDING">
                         <td colspan="2"></td>
                     <td width="130"><span class="top-level-step"><em>PENDING</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.06s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.1s</em></span></td>
                 </tr>
 
             </table>

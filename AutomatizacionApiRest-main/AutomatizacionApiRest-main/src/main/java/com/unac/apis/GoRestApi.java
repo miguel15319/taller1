@@ -4,27 +4,24 @@ import com.unac.restinteractions.RestInteractions;
 
 public class GoRestApi {
 
-    private static final String TOKEN = "e871d08829b6c03f39b4eea4d1e51522ab2cf5b59685c8d082f196db681b6254";
-    private static String pathName = "name";
+    private static final String TOKEN = "13dcd036efe11c236b649224a20b777de7ce9c80c69a51338c6fe0231b86c00f";
 
     public static void setBaseUrl(String baseUrl) {
         RestInteractions.setBaseUrl(baseUrl);
-    }
-
-    public static void executionGetToken(String endPoint, String idUser){
-        RestInteractions.executionGetToken(endPoint, idUser, TOKEN);
-    }
-
-    public static void validateResponse(Integer statusCode, String name) {
-        RestInteractions.validatecode(statusCode);
-        RestInteractions.validateDataResponse(name, pathName);
     }
 
     public static void updateUser(String userId, String name, String email) {
         RestInteractions.executeUpdateUser(userId, name, email);
     }
 
+    public static void validateStatusCode(int statusCode) {
+        RestInteractions.validateStatusCode(statusCode);
+    }
+
     public static void validateUpdatedUser(String userId, String expectedName, String expectedEmail) {
         RestInteractions.validateUserUpdate(userId, expectedName, expectedEmail);
+    }
+
+    public static void validateUpdatedUser(String expectedName, String expectedEmail) {
     }
 }
